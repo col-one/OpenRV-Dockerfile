@@ -1,5 +1,5 @@
 # OpenRV-Dockerfile
-A Dockerfile centos7 base to build OpenRV from https://github.com/AcademySoftwareFoundation/OpenRV.git
+A Dockerfile centos7 based to build OpenRV from https://github.com/AcademySoftwareFoundation/OpenRV.git
 
 # Build OpenRV with this Dockerfile
 ## 1. Clone this repository
