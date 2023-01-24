@@ -19,7 +19,7 @@ docker build -t openrv .
 You may have to use sudo, depending on your configuration.
 
 ## 5. Run the docker openrv image
-Run and mount a volume to point the `OpenRV-Dockerfile` directory (within qt5.15.2 installation)
+Run the docker image and mount a volume to point the `OpenRV-Dockerfile` directory (within qt5.15.2 installation)
 ```
 docker run -ti -v /OpenRV-Dockerfile:/rv
 ```
