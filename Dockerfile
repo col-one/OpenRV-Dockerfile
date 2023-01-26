@@ -47,4 +47,4 @@ cd nasm-2.15.05 && \
 make -j && \
 make install
 
-
+RUN yum -y install meson
