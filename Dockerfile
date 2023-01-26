@@ -20,6 +20,9 @@ yum -y install nvidia-detect.x86_64 && \
 yum -y install $(nvidia-detect) -y && \
 yum install -y opencl-headers
 
+RUN yum -y install epel-release && \
+yum -y install opencl-headers
+
 # clone source
 RUN git clone https://github.com/AcademySoftwareFoundation/OpenRV.git
 
