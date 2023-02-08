@@ -9,7 +9,7 @@ RUN yum -y install alsa-lib-devel autoconf automake \
 avahi-compat-libdns_sd-devel bison bzip2-devel cmake-gui curl-devel \
 flex glew-devel libXcomposite libXi-devel libaio-devel \
 libffi-devel libncurses-devel libtool libxkbcommon openssl-devel \
-pulseaudio-libs pulseaudio-libs-glib2 ocl-icd opencl-headers python3 \
+pulseaudio-libs pulseaudio-libs-glib2 ocl-icd python3 \
 python3-devel qt5-qtbase-devel readline-devel sqlite-devel tcl-devel \
 tk-devel yasm zlib-devel meson tcsh
 
@@ -17,8 +17,7 @@ tk-devel yasm zlib-devel meson tcsh
 RUN rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org && \
 rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm && \
 yum -y install nvidia-detect.x86_64 && \
-yum -y install $(nvidia-detect) -y && \
-yum install -y opencl-headers
+yum -y install $(nvidia-detect)
 
 RUN yum -y install epel-release && \
 yum -y install opencl-headers
